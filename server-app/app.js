@@ -7,7 +7,7 @@ const Event = require('./models/event');
 const app = express();
 
 // connect to mongodb
-const dbURI = 'mongodb+srv://buddy:buddyPswd@cluster0.yrfjoru.mongodb.net/cluster0?retryWrites=true&w=majority&appName=Cluster0'
+const dbURI = 'mongodb+srv://<Owner_Name>:<Owner_Pswd>@cluster0.yrfjoru.mongodb.net/cluster0?retryWrites=true&w=majority&appName=Cluster0'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err));
